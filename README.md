@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<title>Production & Dispatch Order - Pridel Industries</title>
+<style>
+  @page {
+    size: A4;
+    margin: 16mm;
+  }
+  body {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 12px;
+    color: #111;
+    margin: 0;
+    padding: 0;
+  }
+  .wrap {
+    width: 100%;
+    max-width: 210mm;
+    margin: 0 auto;
+    padding: 0 10mm;
+    box-sizing: border-box;
+  }
+  .box {
+    border: 1px solid #333;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 4px;
+  }
+  .row {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 6px;
+  }
+  .col {
+    flex: 1;
+  }
+  .label {
+    font-weight: bold;
+  }
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    page-break-inside: avoid;
+  }
+  th, td {
+    border: 1px solid #333;
+    padding: 6px;
+    vertical-align: top;
+  }
+  th {
+    background: #f2f2f2;
+    text-align: left;
+  }
+  .small {
+    font-size: 11px;
+  }
+  .right {
+    text-align: right;
+  }
+  .center {
+    text-align: center;
+  }
+  .muted {
+    color: #666;
+  }
+  .sign {
+    height: 42px;
+    border-bottom: 1px dashed #555;
+  }
+  .footer-note {
+    font-size: 10px;
+    color: #555;
+  }
+  /* Adjust column widths */
+  th.srno, td.srno {
+    width: 40px;
+    text-align: center;
+  }
+  th.prodcode, td.prodcode {
+    width: 60px;
+  }
+  th.description, td.description {
+    width: 40%;
+  }
+  th.quantity, td.quantity {
+    width: 80px;
+    text-align: right;
+  }
+  th.checklist, td.checklist {
+    width: 50px;
+    text-align: center;
+  }
+  th.notes, td.notes {
+    width: 190px;
+  }
+
+  /* Remove checklist checkboxes */
+  .checklist {
+    display: flex;
+    justify-content: center;
+    font-style: italic;
+    color: #666;
+    height: 100%;
+    align-items: center;
+  }
+  /* Show only 2 rows per page for printing */
+  @media print {
+    tbody tr {
+      page-break-inside: avoid;
+      page-break-after: auto;
+    }
+    tbody tr:nth-child(2n) {
+      page-break-after: always;
+    }
+  }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <!-- Pridel Industries Letterhead -->
+  <div class="box">
+    <div class="row">
+      <div class="col">
+        <div class="label" style="font-size:18px;">PRIDEL INDUSTRIES</div>
+        <div>Shapar (Veraval), Rajkot - 360024, Gujarat, India</div>
+        <div>Email: pridelindustries1@gmail.com | Web: www.pridelgroup.com</div>
+      </div>
+      <div class="col right" style="text-align:right;">
+        <div>GSTIN: __________</div>
+        <div>Document: Production & Dispatch Order</div>
+        <div>Rev: ____ | Page 1 of 1</div>
+      </div>
+    </div>
+  </div>
+  <!-- Customer & Packaging Info -->
+  <div class="box">
+    <div class="row">
+      <div class="col"><span class="label">Customer/Firm:</span> _____________________________</div>
+      <div class="col"><span class="label">Contact:</span> _____________________________</div>
+    </div>
+    <div class="row">
+      <div class="col"><span class="label">Billing Address:</span> ____________________________</div>
+      <div class="col"><span class="label">Shipping Address:</span> ____________________________</div>
+    </div>
+    <div class="row">
+      <div class="col"><span class="label">Packaging Type:</span> _____________________________</div>
+      <div class="col"><span class="label">Box Type:</span> ___________________</div>
+      <div class="col"><span class="label">Marking:</span> ___________________</div>
+    </div>
+  </div>
+  <!-- Order Info -->
+  <div class="box">
+    <div class="row">
+      <div class="col"><span class="label">Order No.:</span> ____________</div>
+      <div class="col"><span class="label">Order Date:</span> ____/____/________</div>
+      <div class="col"><span class="label">Customer PO/Ref:</span> ____________</div>
+      <div class="col"><span class="label">Status:</span> In-Prep / Released / Finished</div>
+    </div>
+    <div class="row">
+      <div class="col"><span class="label">Due Date:</span> ____/____/________</div>
+    </div>
+  </div>
+  <!-- Order Lines Table -->
+  <table>
+    <thead>
+      <tr>
+        <th class="srno">Sr No</th>
+        <th class="prodcode">Product Code</th>
+        <th class="description">Description</th>
+        <th class="quantity">Quantity</th>
+        <th class="checklist">Checklist</th>
+        <th class="notes">Notes (if not ready)</th>
+      </tr>
+    </thead>
+    <tbody>
+      <!-- 15 Rows with Series Numbers -->
+      <tr>
+        <td class="srno">1</td>
+        <td class="prodcode"></td>
+        <td class="description"></td>
+        <td class="quantity"></td>
+        <td class="checklist"></td>
+        <td class="notes"></td>
+      </tr>
+      <tr>
+        <td class="srno">2</td>
+        <td class="prodcode"></td>
+        <td class="description"></td>
+        <td class="quantity"></td>
+        <td class="checklist"></td>
+        <td class="notes"></td>
+      </tr>
+      <tr>
+        <td class="srno">3</td>
+        <td class="prodcode"></td>
+        <td class="description"></td>
+        <td class="quantity"></td>
+        <td class="checklist"></td>
+        <td class="notes"></td>
+      </tr>
+      <tr>
+        <td class="srno">4</td>
+        <td class="prodcode"></td>
+        <td class="description"></td>
+        <td class="quantity"></td>
+        <td class="checklist"></td>
+        <td class="notes"></td>
+      </tr>
+      <tr>
+        <td class="srno">5</td>
+        <td class="prodcode"></td>
+        <td class="description"></td>
+        <td class="quantity"></td>
+        <td class="checklist"></td>
+        <td class="notes"></td>
+      </tr>
+      <tr>
+        <td class="srno">6</td>
+        <td class="prodcode"></td>
+        <td class="description"></td>
+        <td class="quantity"></td>
+        <td class="checklist"></td>
+        <td class="notes"></td>
+      </tr>
+      <tr>
+        <td class="srno">7</td>
+        <td class="prodcode"></td>
+        <td class="description"></td>
+        <td class="quantity"></td>
+        <td class="checklist"></td>
+        <td class="notes"></td>
+      </tr>
+      <tr>
+        <td class="srno">8</td>
+        <td class="prodcode"></td>
+        <td class="description"></td>
+        <td class="quantity"></td>
+        <td class="checklist"></td>
+        <td class="notes"></td>
+      </tr>
+      <tr>
+        <td class="srno">9</td>
+        <td class="prodcode"></td>
+        <td class="description"></td>
+        <td class="quantity"></td>
+        <td class="checklist"></td>
+        <td class="notes"></td>
+      </tr>
+      <tr>
+        <td class="srno">10</td>
+        <td class="prodcode"></td>
+        <td class="description"></td>
+        <td class="quantity"></td>
+        <td class="checklist"></td>
+        <td class="notes"></td>
+      </tr>
+      <tr>
+        <td class="srno">11</td>
+        <td class="prodcode"></td>
+        <td class="description"></td>
+        <td class="quantity"></td>
+        <td class="checklist"></td>
+        <td class="notes"></td>
+      </tr>
+      <tr>
+        <td class="srno">12</td>
+        <td class="prodcode"></td>
+        <td class="description"></td>
+        <td class="quantity"></td>
+        <td class="checklist"></td>
+        <td class="notes"></td>
+      </tr>
+      <tr>
+        <td class="srno">13</td>
+        <td class="prodcode"></td>
+        <td class="description"></td>
+        <td class="quantity"></td>
+        <td class="checklist"></td>
+        <td class="notes"></td>
+      </tr>
+      <tr>
+        <td class="srno">14</td>
+        <td class="prodcode"></td>
+        <td class="description"></td>
+        <td class="quantity"></td>
+        <td class="checklist"></td>
+        <td class="notes"></td>
+      </tr>
+      <tr>
+        <td class="srno">15</td>
+        <td class="prodcode"></td>
+        <td class="description"></td>
+        <td class="quantity"></td>
+        <td class="checklist"></td>
+        <td class="notes"></td>
+      </tr>
+    </tbody>
+    <tfoot>
+      <tr>
+        <th colspan="3" class="right">Total Quantity</th>
+        <th class="right"></th>
+        <th colspan="2"></th>
+      </tr>
+    </tfoot>
+  </table>
+  <!-- Completion Blocks -->
+  <div class="box">
+    <div class="row">
+      <div class="col"><span class="label">Order Completion Date:</span> ____/____/________</div>
+      <div class="col"><span class="label">Production In‑Charge Signature:</span> <div class="sign"></div></div>
+    </div>
+    <div class="row">
+      <div class="col"><span class="label">Dispatch Note No.:</span> ____________</div>
+      <div class="col"><span class="label">Dispatch Date:</span> ____/____/________</div>
+      <div class="col"><span class="label">Method/Carrier:</span> __________________</div>
+      <div class="col"><span class="label">No. of Boxes:</span> ________</div>
+    </div>
+    <div class="row">
+      <div class="col"><span class="label">Dispatch In‑Charge Signature:</span> <div class="sign"></div></div>
+      <div class="col"><span class="label">Customer/Receiver Signature:</span> <div class="sign"></div></div>
+    </div>
+  </div>
+  <div class="footer-note">
+    Note: Tick “Ready” for correct products. If “Not Ready” is selected, provide reason in the Notes column. Attach routing sheet/BOM if required. Keep signed copies for records.
+  </div>
+</div>
+</body>
+</html>
